@@ -23,8 +23,14 @@ jobs:
         with:
           node-version: 16
 
+      - name: "Test this is being called"
+        run: echo "Hi am here"
+
       - name: "🔧 install npm@8.19.4"
         run: npm i -g npm@8.19.4
+
+      - name: "Test this is being called AFTER npm install"
+        run: echo "BYE!"
 
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
